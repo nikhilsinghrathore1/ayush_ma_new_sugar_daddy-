@@ -13,35 +13,51 @@ useEffect(() => {
  
 
 
-  let tl =gsap.timeline()
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: body.current,
+      markers: true,
+      top: "0px 100px ", 
+      end:"1000px 0",
+      scrub: 1,
+      pin:true,
+    }
+  });
 
-  gsap.registerPlugin(ScrollTrigger)
+  tl.set(test.current, { transformPerspective: 1000 })
+  
+  tl.fromTo(test.current, {
+    y: "00px",
+    transformOrigin: "bottom",
+    rotateX: "90deg"
+  }, {
+    rotateX: "0deg",
+    top:"30%",
+  },'a');
 
-  tl.fromTo(test.current,{
 
-    scrollTrigger:{
-      trigger:body.current,
-      markers:true,
-      top: "0 0" , 
-      end: "bottom bottom " 
-    },
-    y:"-200px",
-    rotateX:"-90deg"
+  tl.to(test.current, {
+   
+    scale:"0.94",
+    transformOrigin:"center"
+  });
 
-})
-
+  
 
 }, [])
 
 
   return (
-    <div ref={body} className=' relative w-full h-screen overflow-hidden bg-red-400 flex items-center justify-center '>
+    <div ref={body} className=' relative w-full h-screen overflow-hidden flex items-center justify-center '>
 
                <h1 className='text-[8rem] font-poppins uppercase tracking-tighter '>case study</h1>
 
                {/* for the sliding window */}
 
-               <div ref={test} className='w-[50%] h-[50%] bg-red-700 absolute bottom-3 rot'></div>
+               <div ref={test} className='w-[50%] h-[50%] absolute bottom-[-180px] rounded-lg shadow-sm shadow-black rot'>
+                <img className='w-full h-full object-cover' src="https://images.pexels.com/photos/28542950/pexels-photo-28542950/free-photo-of-african-penguins-on-a-beach-in-south-africa.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="not showing" />
+               </div>
+
 
     </div>
   )

@@ -19,8 +19,8 @@
 
 .rot {
   transform: rotateY(1deg);
-  transition: all 1s ;
   /* transform: rotateX(80deg); */
+  perspective: 500px;
   transform-origin: bottom;
 }
 
