@@ -1,0 +1,21 @@
+.mainDiv{
+    @apply min-h-screen h-auto flex justify-center items-center;
+}
+.logoDiv{
+    @apply flex flex-col justify-center items-center m-auto absolute top-[50%] translate-y-[-50%];
+}
+.logo{
+    @apply w-[70vw] md:w-[56.34vw] xll:w-auto
+}
+.tagLine{
+    @apply text-center text-[#E97700] text-[11px] xxs:text-[12px] sm1:text-[14px] sm4:text-[16px] sm:text-[19px] md2:text-[22px] dlg:text-[26px] dxl:text-[32px] xl2:text-[38px] xll:text-[42px] font-poppins font-medium;
+}
+
+.scrollDownDiv{
+    @apply absolute bottom-0;
+}
+
+.scrollDown{
+    @apply h-[10vw] md:h-[7vw] w-[20vw] md:w-[14vw]
+}
+

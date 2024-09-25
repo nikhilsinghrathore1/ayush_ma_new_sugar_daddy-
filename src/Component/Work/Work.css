@@ -1,0 +1,34 @@
+.work_root {
+  @apply h-screen
+}
+
+.scroll-w-none {
+  scrollbar-width: none;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container {
+  margin: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  height: auto;
+  width: 300px;
+  transition: transform 0.5s;
+}
+
+.caption {
+  top: 100%;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: transform 0.5s, opacity 0.5s;
+}

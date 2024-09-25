@@ -1,0 +1,14 @@
+.navbarDiv{
+    @apply top-7 right-[9.5%] flex gap-7 fixed z-50 justify-center items-center;
+}
+.navMenuDiv{
+    @apply flex gap-7 text-[17.5px] lg1:text-[19.98px];
+}
+
+.searchBox{
+    @apply border-[1.5px] rounded-[39.96px] py-2 px-5 flex justify-center items-center;
+}
+
+.searchBox > input{
+    @apply text-[15px] lg1:text-[17.48px];
+}

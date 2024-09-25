@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./assets/Font/Poppins-Medium.ttf")format("truetype");
+}
+
+@font-face {
+  font-family: "Inria Serif";
+  src: url("./assets/Font/InriaSerif-Regular.ttf")format("truetype");
+}
+
+.rot {
+  transform: rotateY(1deg);
+  transition: all 1s ;
+  transform: rotateX(80deg);
+  transform-origin: bottom;
+}
+
+
+/* calculate the funding estimate with which means multiply the step one and step two e=mc^2 on the basis of project size and complexity three types one is itna important topic hai na ye pakka mst mai aaega on the , organic , embeded , easy for large based of the size , organic if the project deals with developing a well understood application program and the size development team is reasonably small but highly experienced then the development treated as organic type it has a project size ranging from 2 - 50 something with low complexity the effort estimation is something which may have finite experience but are unfamilier with some aspect of order being developed it has a project size ranging from 15-300 kalgo with medium complexity and effort estimation is 3.34 bit  embedding if the software being developed is highly coupled with complex hardware or if the regulations on operational meathod exists then it is treated as embeded type it has a project size above 300 kalog with large complexity and effort estimation of 3.6 bit should be done in three stages one is basic koko , intermediate , detailed koko basic-:it provide the accruate size of the project parameter by using simple mathematical formula to predict how many person months of works  */
